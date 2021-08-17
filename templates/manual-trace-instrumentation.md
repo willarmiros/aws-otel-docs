@@ -1,6 +1,6 @@
 <!--This piece of documentation should exist for all supported languages in ADOT. It outlines how to perform manual instrumentation for tracing. The documentation that ends up on aws-otel.github.io should match this structure.-->
 
-# Tracing with the AWS Distro for OpenTelemetry {Lanuage} SDK
+# Tracing with the AWS Distro for OpenTelemetry {Language} SDK
 
 ## Introduction
 
@@ -114,4 +114,4 @@ This section is optional but can describe any considerations that developers sho
 
 ## Sample Application
 
-This section can be formatted in whatever way makes sense to the sample app developer. You can even just link to the sample app's repository with a README for instructions on deploying it. The instructions should walk through the end-to-end setup of an application which at a minimum is a server that accepts HTTP requests and makes downstream HTTP and AWS SDK requests.
+This should just link to the manually-instrumented sample app for this language in GitHub. There should be a README describing how to run it there.

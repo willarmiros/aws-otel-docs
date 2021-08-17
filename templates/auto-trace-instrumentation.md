@@ -1,6 +1,6 @@
 <!-- This piece of documentation should exist only for ADOT SDKs that support some form of auto-instrumentation. It outlines how to use automatic instrumentation for tracing. The documentation that ends up on aws-otel.github.io should match this structure -->
 
-# Tracing with the AWS Distro for OpenTelemetry {Lanuage} Auto-Instrumentation
+# Tracing with the AWS Distro for OpenTelemetry {Language} Auto-Instrumentation
 
 ## Introduction
 
@@ -40,4 +40,4 @@ Describe any caveats for using manual instrumentation alongside auto-instrumenta
 
 ## Sample Application
 
-If there is an auto-instrumented AWS sample app, you should link to it here. The instructions for setting it up should either be here or in the sample app's README.
+This should just link to the auto-instrumented sample app for this language in GitHub. There should be a README describing how to run it there.
