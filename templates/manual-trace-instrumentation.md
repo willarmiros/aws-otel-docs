@@ -48,12 +48,12 @@ code snippet for adding EC2 detector
 
 To see what attributes are captured and how to add other resource detectors, see the OpenTelemetry documentation (should link to upstream docs for resource detectors).
 
-### Logging
+### Debug Logging
 
-Document how to provide your own logger & change log level.
+Document (or link to upstream docs) for how the OTel SDK's debug logging works, and how you can provide your own logger & change log level.
 
 ```
-sample code for substituting in a custom logger and changing log level
+sample code for substituting in a custom debug logger and changing log level
 ```
 
 ## Instrumenting an Application
@@ -62,13 +62,7 @@ sample code for substituting in a custom logger and changing log level
 
 OpenTelemetry provides a wide range of instrumentations for popular {language} libraries. Instrumenting a library means that every time the library is used to make or handle a request is automatically wrapped with a populated span.
 
-### Instrumenting Incoming Requests
-
-How to install the instrumentation library at a pinned version (if not yet stable). This would be for the popular server frameworks that OTel supports.
-
-Explain and include a code sample for at least 1 of the most popular ways of instrumenting incoming requests to a server. *This can be a link to the upstream's instrumentation documentation*.
-
-Ideally, we should include several libaries if we're just linking to upstream.
+Provide a link to the matrix of supported instrumentations for this language. Mention that web frameworks, downstream HTTP, SQL, Grpc, and other requests can be captured using OpenTelemetry.
 
 ### Instrumenting the AWS SDK
 
@@ -79,14 +73,6 @@ Explain how to instrument the AWS SDK (both versions if applicable). Include a l
 ```
 Code snippet for adding AWS SDK instrumentation
 ```
-
-### Instrumenting HTTP Libraries
-
-Link to the upstream's instrumentation documentation for the language's native HTTP client and/or popular HTTP clients, depending on common practices for the language.
-
-### Instrumenting SQL Libraries
-
-Link to the upstream's instrumentation documentation for MySQL, Postgres, and other popular ORMs or SQL libraries.
 
 ## Custom Instrumentation
 
@@ -102,7 +88,7 @@ code snippet for starting an Internal (default) span, with comment saying it wil
 
 ### Adding custom attributes
 
-You can also add custom key-value pairs as attributes onto your spans. If you add special prefixes to these attributes, they will be automatically converted to metadata or annotations in the X-Ray backend. To read more about X-Ray annotations and metadata see the [AWS X-Ray Developer Guide](https://docs.aws.amazon.com/xray/latest/devguide/xray-concepts.html#xray-concepts-annotations).
+You can also add custom key-value pairs as attributes onto your spans. Attributes are converted to metadata by default. If you [configure your collector](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/7bf2266a025425993a233f66c77a0810ab11a78b/exporter/awsxrayexporter#exporter-configuration), you can convert some or all of the attributes to annotations. To read more about X-Ray annotations and metadata see the [AWS X-Ray Developer Guide](https://docs.aws.amazon.com/xray/latest/devguide/xray-concepts.html#xray-concepts-annotations).
 
 ```
 code snippet for adding metadata & annotation attributes
