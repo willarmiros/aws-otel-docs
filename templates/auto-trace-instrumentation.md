@@ -1,6 +1,6 @@
 <!-- This piece of documentation should exist only for ADOT SDKs that support some form of auto-instrumentation. It outlines how to use automatic instrumentation for tracing. The documentation that ends up on aws-otel.github.io should match this structure -->
 
-# Tracing with the AWS Distro for OpenTelemetry {Language} Auto-Instrumentation
+# Tracing with the AWS Distro for OpenTelemetry {Language} Auto-Instrumentation and X-Ray
 
 ## Introduction
 
