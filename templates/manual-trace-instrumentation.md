@@ -1,6 +1,6 @@
 <!--This piece of documentation should exist for all supported languages in ADOT. It outlines how to perform manual instrumentation for tracing. The documentation that ends up on aws-otel.github.io should match this structure.-->
 
-# Tracing with the AWS Distro for OpenTelemetry {Language} SDK
+# Tracing with the AWS Distro for OpenTelemetry {Language} SDK and X-Ray
 
 ## Introduction
 
