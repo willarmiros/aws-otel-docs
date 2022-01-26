@@ -34,6 +34,14 @@ How to enable resource detectors (if currently possible).
 
 Describe any configurations via environment variable, command line option, or some other non-invasive method that might be relevant. Also include a link to the upstream documentation on how to configure auto-instrumentation.
 
+### Configuring Sampling
+
+By default, OpenTelemetry {language} auto-instrumentation samples 100% of incoming requests.
+
+Explain how to configure the auto-instrumentation to use the `parentbased_traceidratio` sampling to reduce the sampling rate. 
+
+Also explain how to enable the X-Ray remote sampler to use centralized sampling if applicable.
+
 ## Using Manual Instrumentation
 
 Describe any caveats for using manual instrumentation alongside auto-instrumentation. Link to the manual instrumentation docs.
