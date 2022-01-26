@@ -36,6 +36,17 @@ Explain how to instantiate a new tracer provider and provide it with the X-Ray I
 code sample of setting up the tracer provider with above components
 ```
 
+### Configuring Sampling
+
+By default, the OpenTelemetry {language} SDK samples 100% of incoming requests.
+
+Explain how to use the `parentbased_traceidratio` sampling to reduce the sampling rate. Also explain how to enable the X-Ray remote sampler to use centralized sampling if applicable.
+
+```
+code sample of setting up the tracer provider with 10% sampling
+code sample of setting up the tracer provider with X-ray remote sampling (if applicable)
+```
+
 ### Using the AWS resource Detectors
 
 How to install the AWS Resource detectors dependency (if it's already included with ID generator/propagator, you can explain that).
